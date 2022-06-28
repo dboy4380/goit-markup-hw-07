@@ -4,10 +4,9 @@
   top: 0;
   z-index: 1;
   background: var(--first-back-color);
-}
-
-.header__logo {
-  margin-right: 93px;
+  &__logo {
+    margin-right: 93px;
+  }
 }
 
 .header-area {
@@ -27,10 +26,9 @@
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
-}
-
-.logo__section {
-  color: var(--logo-second-color);
+  &__section {
+    color: var(--logo-second-color);
+  }
 }
 
 .nav__link {
@@ -43,21 +41,21 @@
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--accent-color);
-  border-bottom: 5px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-bottom: 5px solid var(--accent-color);
+  }
 }
 
 .current-link {
   border-bottom: 5px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    border: none;
+  }
 }
-.current-link:hover,
-.current-link:focus {
-  border: none;
-}
+
 .nav__link,
 .contact {
   text-decoration: none;
@@ -75,33 +73,9 @@
 
 .nav__item {
   margin-right: 50px;
-}
-
-.nav__item:last-child {
-  margin-right: 0;
-}
-
-/* -----------------CONTACT-LIST------------------ */
-
-.contact__item {
-  margin-right: 50px;
-}
-
-.contact__link {
-  color: var(--accessory-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.contact__link:hover,
-.contact__linkr:focus {
-  color: var(--accent-color);
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .contact {
@@ -110,19 +84,34 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
-}
-
-.contact:hover,
-.contact:focus {
-  color: var(--accent-color);
-}
-
-.contact__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contact__icon:hover,
-.contact__icon:focus {
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &__item {
+    margin-right: 50px;
+  }
+  &__link {
+    color: var(--accessory-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    &:hover,
+    &:focus {
+      fill: currentColor;
+    }
+  }
 }
